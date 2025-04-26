@@ -74,5 +74,5 @@ jobs:
           build-args: |
               VERSION=${{ steps.get_version.outputs.version }}
           tags: |
-              unraiders/unifi-pbr-cloudflare:${{ steps.get_version.outputs.version }}
-              ${{ steps.check_version.outputs.is_semantic == 'true' && 'unraiders/unifi-pbr-cloudflare:latest' || '' }}
+              unraiders/clouding-ddns-fw:${{ steps.get_version.outputs.version }}
+              ${{ steps.check_version.outputs.is_semantic == 'true' && 'unraiders/clouding-ddns-fw:latest' || '' }}
