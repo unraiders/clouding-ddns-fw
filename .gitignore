@@ -1,0 +1,17 @@
+# Mac OS
+.DS_Store
+
+# Project files
+registros_fw.json
+desarrollo.md
+
+# Ruff files
+.ruff_cache
+pyproject.toml
+
+# Environments files
+.venv
+.env
+
+# Python cache
+__pycache__/

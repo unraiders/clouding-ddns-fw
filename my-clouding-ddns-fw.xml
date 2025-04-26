@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>clouding-ddns-fw</Name>
+  <Repository>unraiders/clouding-ddns-fw</Repository>
+  <Registry>https://hub.docker.com/r/unraiders/clouding-ddns-fw/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/unraiders/clouding-ddns-fw</Support>
+  <Project>https://github.com/unraiders/clouding-ddns-fw</Project>
+  <Overview>Control firewall en VPS de Clouding con notificación a Telegram o Discord.</Overview>
+  <Category>Downloaders: Tools:</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/unraiders/clouding-ddns-fw/master/my-clouding-ddns-fw.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/unraiders/clouding-ddns-fw/master/imagenes/clouding-ddns-fw.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1702220612</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Control firewall en VPS de Clouding con notificación a Telegram o Discord.</Description>
+  <Config Name="CLOUDING_API_URL" Target="CLOUDING_API_URL" Default="" Mode="" Description="URL API Clouding por defecto: https://api.clouding.io/v1" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="CLOUDING_API_TOKEN" Target="CLOUDING_API_TOKEN" Default="" Mode="" Description="Token para el acceso a Clouding a través de la API." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="CLOUDING_FW_NAME" Target="CLOUDING_FW_NAME" Default="" Mode="" Description="Nombre del firewall en tu VPS de Clouding" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="CLIENTE_NOTIFICACION" Target="CLIENTE_NOTIFICACION" Default="telegram|discord" Mode="" Description="Cliente de notificaciones. (telegram o discord)" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="TELEGRAM_BOT_TOKEN" Target="TELEGRAM_BOT_TOKEN" Default="" Mode="" Description="Telegram Bot Token" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="TELEGRAM_CHAT_ID" Target="TELEGRAM_CHAT_ID" Default="" Mode="" Description="Telegram Chat ID" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="DISCORD_WEBHOOK" Target="DISCORD_WEBHOOK" Default="" Mode="" Description="Discord Webhook" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="CRON" Target="CRON" Default="*/10 * * * *" Mode="" Description="Hora / fecha de ejecución. (formato crontab. ej., */10 * * * * = cada 10 minutos, visita https://crontab.guru para más info.)" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DEBUG" Target="DEBUG" Default="0|1" Mode="" Description="Habilita el modo Debug en el log. (0 = No / 1 = Si)" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="TZ" Target="TZ" Default="Europe/Madrid" Mode="" Description="Timezone (Por ejemplo: Europe/Madrid)" Type="Variable" Display="always" Required="true" Mask="false"/>
+</Container>

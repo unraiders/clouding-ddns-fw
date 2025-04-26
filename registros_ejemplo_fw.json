@@ -1,0 +1,20 @@
+[
+    {
+        "firewall_id": "",
+        "sourceIp": "",
+        "protocol": "tcp",
+        "description": "Mi SSH",
+        "portRangeMin": 22,
+        "portRangeMax": 22,
+        "id": ""
+    },
+    {
+        "firewall_id": "",
+        "sourceIp": "",
+        "protocol": "tcp",
+        "description": "Mi FTP",
+        "portRangeMin": 21,
+        "portRangeMax": 21,
+        "id": ""
+    }
+]

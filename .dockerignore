@@ -1,0 +1,12 @@
+# Ignore everything
+*
+
+# Allow only specific files
+!config.py
+!entrypoint.sh
+!requirements.txt
+!clouding-ddns-fw.py
+!utils.py
+!ip_info.py
+!firewall_registros.py
+!notificaciones.py

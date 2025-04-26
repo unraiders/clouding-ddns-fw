@@ -1,0 +1,8 @@
+services:
+  clouding-ddns-fw:
+    image: unraiders/clouding-ddns-fw
+    container_name: clouding-ddns-fw
+    env_file:
+      - .env
+    network_mode: bridge
+    restart: unless-stopped
